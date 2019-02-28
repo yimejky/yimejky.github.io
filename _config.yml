@@ -1,3 +1,4 @@
 name: Nikolas Tomaštík
+name_short: NT
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
