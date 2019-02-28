@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Nikolas Tomastik, Launches Site"
+layout: project
+title: "My Personal Page"
 date: 2019-02-21
 ---
 

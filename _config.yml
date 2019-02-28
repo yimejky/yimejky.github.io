@@ -1,4 +1,7 @@
 name: Nikolas Tomaštík
 name_short: NT
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /projects/:year/:month/:day/:title
+collections:
+  projects:
+    output: true
