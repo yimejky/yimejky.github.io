@@ -13,8 +13,9 @@ title: Nikolas Tomastik
                 <h5 class="text-on-back">01</h5>
                 <p class="profile-description">TODO</p>
                 <div class="btn-wrapper profile pt-3">
-                    <a target="_blank" href="https://www.facebook.com/creativetim"
-                       class="btn btn-icon btn-facebook btn-round" data-toggle="tooltip" data-original-title="Like us">
+                    <a target="_blank" href="{{ site.facebook_link }}"
+                       class="btn btn-icon btn-facebook btn-round" data-toggle="tooltip"
+                       data-original-title="Follow me">
                         <i class="fab fa-facebook-square"></i>
                     </a>
                 </div>
@@ -79,11 +80,8 @@ title: Nikolas Tomastik
                 <h5 class="text-on-back">02</h5>
                 <p class="profile-description text-left">TODO</p>
                 <div class="btn-wrapper pt-3">
-                    <button href="javascript:void(0)" class="btn btn-simple btn-primary">
-                        <i class="tim-icons icon-book-bookmark"></i> Bookmark
-                    </button>
-                    <button href="javascript:void(0)" class="btn btn-simple btn-info">
-                        <i class="tim-icons icon-bulb-63"></i> Check it!
+                    <button href="/projects" class="btn btn-simple btn-info">
+                        Check out my Projects!
                     </button>
                 </div>
             </div>
@@ -100,21 +98,23 @@ title: Nikolas Tomastik
                         <h5 class="text-on-back">03</h5>
                     </div>
                     <div class="card-body">
-                        <form action="https://getsimpleform.com/messages?form_api_token=331bc6930815b862efe006e983aaf27a" method="post">
+                        <form action="https://getsimpleform.com/messages?form_api_token=331bc6930815b862efe006e983aaf27a"
+                              method="post">
                             <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                            <input type='hidden' name='redirect_to' value='https://yimejky.github.io/' />
+                            <input type='hidden' name='redirect_to' value='https://yimejky.github.io/'/>
 
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Your Name</label>
-                                        <input type="text" class="form-control" name="name" value="Nikolas">
+                                        <input type="text" class="form-control" name="name" placeholder="Nikolas">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Email address</label>
-                                        <input type="email" class="form-control" name="email" placeholder="nikolas@email.com">
+                                        <input type="email" class="form-control" name="email"
+                                               placeholder="nikolas@email.com">
                                     </div>
                                 </div>
                             </div>
@@ -122,13 +122,14 @@ title: Nikolas Tomastik
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Phone</label>
-                                        <input type="text" class="form-control" name="phone" value="+421 912 345 678">
+                                        <input type="text" class="form-control" name="phone"
+                                               placeholder="+421 912 345 678">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Company</label>
-                                        <input type="text" class="form-control" name="company" value="Reasonauts">
+                                        <input type="text" class="form-control" name="company" placeholder="Reasonauts">
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +137,8 @@ title: Nikolas Tomastik
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>Message</label>
-                                        <input type="text" class="form-control" name="message" placeholder="Hello there!">
+                                        <input type="text" class="form-control" name="message"
+                                               placeholder="Hello there!">
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +155,7 @@ title: Nikolas Tomastik
                         <i class="tim-icons icon-square-pin"></i>
                     </div>
                     <div class="description">
-                        <h4 class="info-title">Find us at the office</h4>
+                        <h4 class="info-title">Find me at the office</h4>
                         <p> Martinčekova 783/17
                             <br> 821 01 Bratislava,
                             <br> Slovensko
@@ -165,7 +167,7 @@ title: Nikolas Tomastik
                         <i class="tim-icons icon-mobile"></i>
                     </div>
                     <div class="description">
-                        <h4 class="info-title">Give us a ring</h4>
+                        <h4 class="info-title">Give me a ring</h4>
                         <p> {{site.name}}
                             <br> +421 912 345 678
                             <br> Mon - Fri, 8:00-20:00
