@@ -1,29 +1,25 @@
 ---
 layout: project
 title: "My Personal Page"
-type: "school project"
+type: ['School', 'Web Publishing']
 date: 2019-02-28
+language: 'sk'
+file: 'my_page.png'
 ---
-
-Well. Finally got around to putting this old website together. Neat thing 
-about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown 
-to author my posts. It actually is a lot easier than I thought it was going to be.
-
-Project pages:
 
 #### Aké rozloženia stránok ste vytvorili, ich účel:
  * Home
  * Jobs & Education
  * Skills
  * Projects
+ * Web publishing
 
 
 #### Aké prvky ste použili v šablonách (premenné, kolekcie, … zo zoznamu vyššie):
-In project we have few collections:
- * Projects
- * Schools
- * Skills
- * Jobs
+Kolekcie:
+{% for col in site.collections %} * {{ col.label }}
+{% endfor %}
+
 
 #### Aké štýly ste použili:
 

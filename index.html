@@ -2,101 +2,36 @@
 layout: default
 title: Nikolas Tomastik
 ---
-
-<div class="page-header">
-    <img src="/assets/img/dots.png" class="dots">
-    <img src="/assets/img/path4.png" class="path">
-    <div class="container align-items-center">
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <h1 class="profile-title text-left">{{site.name}}</h1>
-                <h5 class="text-on-back">01</h5>
-                <p class="profile-description">TODO</p>
-                <div class="btn-wrapper profile pt-3">
-                    <a target="_blank" href="{{ site.facebook_link }}"
-                       class="btn btn-icon btn-facebook btn-round" data-toggle="tooltip"
-                       data-original-title="Follow me">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                <div class="card card-plain">
-                    <div class="card-header">
-                        <img src="/assets/custom/profile.jpeg" class="img-center img-fluid rounded-circle">
+<div class="section mt-5">
+    <div class="container mt-5">
+        <div class="jumbotron text-white" style="background: none;">
+            <div class="container text-left">
+                <div class="row">
+                    <div class="offset-md-2 col-md-6">
+                        <h1 class="display-1 mb-1 mt-4">{{site.name}}</h1>
+                        <h2>Full-Stack Develoepr</h2>
                     </div>
-                    <div class="card-body">
-
+                    <div class="col-md-3">
+                        <img style="margin-top: -30px;" src="/assets/custom/profile.jpeg" class="img-center img-fluid rounded-circle">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="section">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-6">
-                <div class="row justify-content-between align-items-center">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="/assets/img/denys.jpg" alt="First slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Big City Life, United States</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="/assets/img/fabien-bazanegue.jpg" alt="Second slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Somewhere Beyond, United States</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="/assets/img/mark-finn.jpg" alt="Third slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Stocks, United States</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                           data-slide="prev">
-                            <i class="tim-icons icon-minimal-left"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                           data-slide="next">
-                            <i class="tim-icons icon-minimal-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <h1 class="profile-title text-left">Projects</h1>
-                <h5 class="text-on-back">02</h5>
-                <p class="profile-description text-left">TODO</p>
-                <div class="btn-wrapper pt-3">
-                    <button href="/projects" class="btn btn-simple btn-info">
-                        Check out my Projects!
-                    </button>
-                </div>
-            </div>
-        </div>
+<div class="section card" style="border-radius: 0;">
+    <div class="container text-center">
+        <h1 class="display-3 mb-2">Projects</h1>
+        <h4 class="mb-3">Check my recent work :smile:</h4>
+        <a class="btn btn-primary" href="/projects">check now :+1:!</a>
     </div>
 </div>
 <section class="section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-plain">
-                    <div class="card-header">
-                        <h1 class="profile-title text-left">Contact</h1>
-                        <h5 class="text-on-back">03</h5>
-                    </div>
+        <h1 class="text-center mb-5 display-3">Contact</h1>
+        <div class="row mt-5">
+            <div class="offset-md-1 col-md-5">
+                <div class="card">
                     <div class="card-body">
                         <form action="https://getsimpleform.com/messages?form_api_token=331bc6930815b862efe006e983aaf27a"
                               method="post">
@@ -143,31 +78,25 @@ title: Nikolas Tomastik
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-round float-right" rel="tooltip"
-                                    data-original-title="Can't wait for your message" data-placement="right">Send text
+                                    data-original-title="Can't wait for your message" data-placement="right">Send text :email:
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 ml-auto">
-                <div class="info info-horizontal">
-                    <div class="icon icon-primary">
-                        <i class="tim-icons icon-square-pin"></i>
-                    </div>
-                    <div class="description">
-                        <h4 class="info-title">Find me at the office</h4>
-                        <p> Martinčekova 783/17
-                            <br> 821 01 Bratislava,
-                            <br> Slovensko
-                        </p>
-                    </div>
-                </div>
-                <div class="info info-horizontal">
-                    <div class="icon icon-primary">
-                        <i class="tim-icons icon-mobile"></i>
-                    </div>
-                    <div class="description">
-                        <h4 class="info-title">Give me a ring</h4>
+               <div class="row my-4">
+                   <div class="col-xs-12">
+                       <h4><span class="text-primary"><i class="tim-icons icon-square-pin"></i></span> Find me at the office</h4>
+                       <p> Martinčekova 783/17
+                           <br> 821 01 Bratislava,
+                           <br> Slovensko
+                       </p>
+                   </div>
+               </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4><span class="text-primary"><i class="tim-icons icon-mobile"></i></span> Give me a ring</h4>
                         <p> {{site.name}}
                             <br> +421 912 345 678
                             <br> Mon - Fri, 8:00-20:00

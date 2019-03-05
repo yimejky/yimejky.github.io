@@ -1,13 +1,21 @@
 ---
-layout: default
+layout: main_section
 ---
-<div class="section">
-    <div class="container">
-        <h1 class="mt-5">{{ page.title }}</h1>
-        <div class="text-muted">{{ page.date | date_to_string }}</div>
+<div class="card">
+    <div class="card-body">
+        <h1 class="card-title">
+            <span class="badge badge-secondary text-uppercase" style="line-height: 1;font-size:33px;"
+            >{{ page.language }}</span> {{ page.title }}
+        </h1>
+        <p>
+            {% for type in page.type %}
+            <strong class="d-inline-block mb-2 text-primary">{{type}}</strong>
+            {% if forloop.last == false %}|{% endif %}
+            {% endfor %} -
+            {{ page.date | date_to_string }}
+        </p>
+        <hr class="w-100">
 
-        <div>
-            {{ content }}
-        </div>
+        {{ content }}
     </div>
 </div>
