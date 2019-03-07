@@ -6,8 +6,7 @@ title: Jobs & Education
     <div class="mt-5">
         <h1>Jobs :wrench:</h1>
     </div>
-    {% assign tmp = site.jobs | sort: 'from' %}
-    {% assign jobs = tmp | reverse %}
+    {% assign jobs = site.jobs | sort: 'from' | reverse %}
     {% for job in jobs %}
     <div class="card {% if forloop.index == 1 %}bg-info{% endif %}">
         <div class="card-body">
@@ -32,8 +31,7 @@ title: Jobs & Education
     <div class="mt-5">
         <h1>Education :notebook_with_decorative_cover:</h1>
     </div>
-    {% assign tmp = site.schools | sort: 'from' %}
-    {% assign schools = tmp | reverse %}
+    {% assign schools =  site.schools | sort: 'from' | reverse %}
     {% for school in schools %}
     <div class="card {% if forloop.index == 1 %}bg-info{% endif %}">
         <div class="card-body">

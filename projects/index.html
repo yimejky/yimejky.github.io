@@ -4,7 +4,7 @@ title: My Projects
 page_title: 'My Projects'
 ---
 <div class="card-columns">
-    {% assign projects = site.projects | sort: "date" | reverse %}
+    {% assign projects = site.projects | where_exp: "item", "item.disabled != true" | sort: "date" | reverse %}
     {% for project in projects %}
     <div class="card">
         {% if project.file %}

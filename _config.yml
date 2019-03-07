@@ -1,7 +1,7 @@
 name: Nikolas Tomaštík
 name_short: NT
-markdown: kramdown
 facebook_link: https://www.facebook.com/nikolas.yimejky
+markdown: kramdown
 permalink: /projects/:year/:month/:day/:title
 collections:
   projects:

@@ -10,14 +10,21 @@ page_title: Web Publishing Projects
         <div class="card">
             <div class="card-body">
                 {% for type in project.type %}
-                <strong class="d-inline-block mb-2 text-primary">{{type}}</strong>
+                <strong class="d-inline-block mb-2 {% if project.disabled %} text-muted{% else %} text-primary {% endif %}">{{type}}</strong>
                 {% if forloop.last == false %}|{% endif %}
                 {% endfor %}
-                <h2 class="card-title">{{ forloop.index }}. {{ project.title }} <span
-                        class="badge badge-secondary text-uppercase" style="line-height: 1;font-size:33px;"
+                <h2 class="card-title {% if project.disabled %} text-muted{% endif %}">{{ forloop.index }}. {{ project.title }} <span
+                        class="badge badge-secondary text-uppercase {% if project.disabled %} text-muted{% endif %}" style="line-height: 1;font-size:27px;"
                 >{{ project.language }}</span></h2>
-                <div class="card-subtitle text-muted">{{ project.date | date_to_string }}</div>
-                <a href="{{ project.url }}" class="btn btn-warning mt-3" title="{{ project.title }}">See Detail
+
+                <div class="card-subtitle text-muted">
+                    {% if project.disabled %}
+                    -
+                    {% else %}
+                    {{ project.date | date_to_string }}
+                    {% endif %}
+                </div>
+                <a href="{{ project.url }}" class="btn btn-warning mt-3" {% if project.disabled %} disabled{% endif %} title="{{ project.title }}">See Detail
                     :star2:</a>
             </div>
         </div>
