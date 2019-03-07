@@ -2,7 +2,7 @@
 layout: project
 title: "Second Project"
 type: ['School', 'Web Publishing']
-date: 2019-03-25
+date: 2019-03-04
 language: 'sk'
 ---
 
