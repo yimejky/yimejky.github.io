@@ -73,6 +73,7 @@ V rámci premených som využil aj premené zadefinované v súbore `_config.yml
 
 Na celom sídles me použili viacere filtre, zväčša pre filtrovanie kolekcií. Využili sme zoradenie podľa 
 dátumu, zoradenie v opačnom poradí.
+
 Stránka [Web Publishing](/wpub_projects) zobrazuje z kolekcie `projects` iba projekty, ktoré sú označené 
 typom `'Web Publishing'`
 
