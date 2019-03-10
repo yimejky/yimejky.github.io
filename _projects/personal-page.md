@@ -75,7 +75,7 @@ Na celom sídles me použili viacere filtre, zväčša pre filtrovanie kolekcií
 dátumu, zoradenie v opačnom poradí.
 
 Stránka [Web Publishing](/wpub_projects) zobrazuje z kolekcie `projects` iba projekty, ktoré sú označené 
-typom `'Web Publishing'`
+typom `'Web Publishing'`.
 
 [Skills](/skills) je rozdelená do troch katégorií `frontend`, `backend` a `database` a obsahuje tlačidlá, ktoré
 menia obsah stránky podľa zvolenej kategórie. Pri zobrazovaní sa využíva filtrovanie kolekcie `skills`.
