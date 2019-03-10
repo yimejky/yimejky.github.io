@@ -77,6 +77,9 @@ dátumu, zoradenie v opačnom poradí.
 Stránka [Web Publishing](/wpub_projects) zobrazuje z kolekcie `projects` iba projekty, ktoré sú označené 
 typom `'Web Publishing'`.
 
+Stránka [Jobs & Education](/jobs_and_education) zobrazuje z kolekcie `jobs` a `schools`, položky zoradené podľa 
+dátumu.
+
 [Skills](/skills) je rozdelená do troch katégorií `frontend`, `backend` a `database` a obsahuje tlačidlá, ktoré
 menia obsah stránky podľa zvolenej kategórie. Pri zobrazovaní sa využíva filtrovanie kolekcie `skills`.
 
