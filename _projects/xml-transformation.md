@@ -29,7 +29,7 @@ zadania. Správa bude súčasťou vašej stránky o Webovom publikovaní na GitH
 
 ### Opis typu dokumentu a účelu navrhnutých elementov
 
-Navrhli sme XML dokument, ktorý reprezentuje dátový obsah prezetenácie. Koreňový prvok je `Presentation`, ktorý 
+Navrhli sme XML dokument (Dostupný [TU](/assets/xml-project/present.xml).), ktorý reprezentuje dátový obsah prezetenácie. Koreňový prvok je `Presentation`, ktorý 
 obsahuje globálne informácie v tagu `info` a `slides`, ktorý obsahuje jednotlivé snímky prezentácie. Každý 
 snímok prezentácie môže obsahovať nasledujúce prvky:
 

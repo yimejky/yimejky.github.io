@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE presentation
+[
+	<!ELEMENT presentation (info,slides)>
+
+	<!ELEMENT info (author)>
+	<!ELEMENT slides (slide+)>
+	<!ELEMENT slide (title|paragraph|list|picture)+>
+	<!ELEMENT list (listItem+)>
+
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT paragraph (#PCDATA)>
+	<!ELEMENT picture (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT listItem (#PCDATA)>
+
+	<!ATTLIST slide type (default|center) "default">
+	<!ATTLIST picture center (false|true) "false">
+	<!ATTLIST picture src CDATA #REQUIRED>
+
+	<!ATTLIST title fontSize CDATA #IMPLIED>
+	<!ATTLIST paragraph fontSize CDATA #IMPLIED>
+	<!ATTLIST list fontSize CDATA #IMPLIED>
+
+	<!ATTLIST title fontColor CDATA #IMPLIED>
+	<!ATTLIST paragraph fontColor CDATA #IMPLIED>
+	<!ATTLIST list fontColor CDATA #IMPLIED>
+]>
+
+<presentation>
+	<info>
+		<author>Nikolas Tomastik</author>
+	</info>
+
+	<slides>
+		<slide type="center">
+			<title fontSize="45" fontColor="red" >
+				Odporúčacie systémy
+			</title>
+			<picture center="true" src="./images/rec.png" />	
+		</slide>
+		<slide>
+			<title>
+				Personalizované Odporúčanie
+			</title>
+			<paragraph>
+				Rozvoj internetu a technológií spôsobil obrovský nárast dát, ktoré začali byť pre používateľa neúnosné. Riešenie tohto informačného zahltenia sa stalo hlavnou motivácia pre vznik odporúčacích systémov. Odporúčacie systémy uľahčujú rozhodovanie používateľa nahradením používateľovho procesu získavania informácii.
+			</paragraph>
+			<paragraph>
+				Odporúčač navrhne personalizované odporúčanie na základe správania a osobnosti, čoho výsledkom sú položky o ktoré by mohli používateľa zaujímať. Takýmto odporúčaním sa zredukuje veľké množstvo dát, ktoré sú pre používateľa irelevantné.
+			</paragraph>
+			<list fontSize="15">
+				<listItem>Vypočítame centrum pomocou všetkých doteraz ohodnotených podnikov</listItem>
+				<listItem>Pre každý ohodnotený podnik vypočítame vzdialenosť od centrá</listItem>
+				<listItem>Na základe vzdialenosti identifikujeme angl. outliers</listItem>
+				<listItem>Vypočítame nové centurm bez outliers</listItem>
+			</list>
+		</slide>
+		<slide>
+			<title>
+				Vizualizacia odporúčania
+			</title>
+			<paragraph fontSize="10" fontColor="red">
+				Pozor na hodnoty!
+			</paragraph>
+			<picture src="./images/rec2.png" />	
+		</slide>
+		<slide>
+			<title>
+				O Odporúčaní
+			</title>
+			<paragraph>
+				Personalizované odporúčanie sa z pohľadu vytvárania odporúčaní rozdeľujú na tri základne prístupy:
+			</paragraph>
+			<list>
+				<listItem>Odporúčanie na základe obsahu: odporúčač používateľovi odporúča položky podobné položkám z jeho minulosti</listItem>
+				<listItem>Kolaboratívne filtrovanie: používateľovi sú odporučené položky pomocou ľudí s podobným názorom</listItem>
+				<listItem>Hybridné odporúčanie: jedná sa o kombináciu viacerých prístupov odporúčania</listItem>
+			</list>
+		</slide>
+		<slide type="center">
+			<title>
+				Koniec
+			</title>
+			<paragraph>
+				ďakujem za pozornosť
+			</paragraph>
+		</slide>
+	</slides>	
+</presentation>
